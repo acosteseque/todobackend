@@ -3,11 +3,11 @@ MAINTAINER Anthony Costeseque <anthony.costeseque@axians.com>
 
 # Install dev/build dependencies
 RUN apt-get update && \
-  apt-get install -qy python-dev libmysqlclient-dev
+    apt-get install -qy python-dev libmysqlclient-dev
 
 # Activate virtual environment and install wheel support
 RUN . /appenv/bin/activate && \
-  pip install wheel --upgrade
+    pip install wheel --upgrade
 
 # PIP environment variables (NOTE: must be set after installing wheel)
 ENV WHEELHOUSE=/wheelhouse PIP_WHEEL_DIR=/wheelhouse PIP_FIND_LINKS=/wheelhouse XDG_CACHE_HOME=/cache
