@@ -31,13 +31,13 @@ CHECK := @bash -c '\
   then exit $(INSPECT); fi' VALUE
 
 # Use these settings to specify a custom Docker registry
-# DOCKER_REGISTRY ?= registry.vpack.fr
-DOCKER_REGISTRY ?= docker.io
+DOCKER_REGISTRY ?= registry.vpack.fr
+# DOCKER_REGISTRY ?= docker.io
 
 # WARNING: Set DOCKER_REGISTRY_AUTH to empty for Docker Hub
 # Set DOCKER_REGISTRY_AUTH to auth endpoint for private Docker registry
-# DOCKER_REGISTRY_AUTH ?= https://registry.vpack.fr/v2/
-DOCKER_REGISTRY_AUTH ?=
+DOCKER_REGISTRY_AUTH ?= https://registry.vpack.fr/v2/
+# DOCKER_REGISTRY_AUTH ?=
 
 .PHONY: test build release clean tag buildtag login logout publish
 
