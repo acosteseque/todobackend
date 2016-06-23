@@ -32,7 +32,7 @@ CHECK := @bash -c '\
 
 # Use these settings to specify a custom Docker registry
 # DOCKER_REGISTRY ?= registry.vpack.fr
-DOCKER_REGISTRY ?=
+DOCKER_REGISTRY ?= docker.io
 
 # WARNING: Set DOCKER_REGISTRY_AUTH to empty for Docker Hub
 # Set DOCKER_REGISTRY_AUTH to auth endpoint for private Docker registry
